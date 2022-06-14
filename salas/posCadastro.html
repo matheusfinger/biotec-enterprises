@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Backrooms</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../icon/favicon.ico">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <style>
+            .posCadastro {
+                font-size: 2em;
+            }
+            .grid_posCadastro {
+                width: 500px;
+            }
+            .texto {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .container {
+                align-items: center;
+                justify-content: center;
+            }
+            #btnPosCadastro{
+                padding: 12px;
+                display: block;
+                margin: auto;
+                margin-top: 40px;
+                font-size: 1em;
+                background-color: transparent;
+                font-weight: 700;
+
+                text-align: center;
+                border: 1px solid black;
+                width: 150px;
+            }
+            #btnPosCadastro:hover{
+                cursor: pointer;
+            }
+            .gridInicio {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            td {
+                padding-top:15px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <section id="presentation">
+            <div class="presentation container">
+                <div class="posCadastro">
+                    <div class="texto">
+                        <h3>Bem-vindo ao mundo dos Backrooms!</h3>
+                        <p>Aqui inicia sua história. Suas decisões iniciais não terão influência na história principal. </p>
+                    </div>
+                    <div class="gridInicio">
+                        <form>
+                            <table class="grid_posCadastro">
+                                <tr>
+                                    <td><label for="nome_cadastro">Escolha seu personagem: </label></td>
+                                    <td><select name="pets" id="pets" multiple size="8">
+                                        <optgroup label="Homem">
+                                            <option value="dog">Lutador</option>
+                                            <option value="cat">Bruxo</option>
+                                            <option value="hamster" disabled>Suporte/Buff</option>
+                                        </optgroup>
+                                        <optgroup label="Mulher">
+                                            <option value="dog">Lutadora</option>
+                                            <option value="cat">Bruxa</option>
+                                            <option value="hamster" disabled>Suporte/Buff</option>
+                                        </optgroup>
+                                        <optgroup label="Não-binário">
+                                            <option value="dog">Lutadore</option>
+                                            <option value="cat">Bruxe</option>
+                                            <option value="hamster" disabled>Suporte/Buff</option>
+                                        </optgroup>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="cor_band">Cor da sua bandeira: </label></td>
+                                    <td><input type="color" id="cor_band" name="cor_band" value="#e66465"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dificuldade">Dificuldade: </label></td>
+                                    <td><select name="dificuldade" id="dificuldade">
+                                        <option value="1" selected>Fácil</option>
+                                        <option value="2">Médio</option>
+                                        <option value="3">Difícil</option>
+                                      </select>
+                                </tr>
+                            </table>
+                            <!-- <input type="submit" id="btnCadastro" value="Cadastrar"> !-->
+                        </form>
+                        <div class="Personagem">
+                            <h2>Card com o personagem</h2>
+                        </div>
+                    </div>
+                    <a id="btnPosCadastro" href="dashboard.html">Continuar</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
