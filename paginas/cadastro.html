@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Backrooms</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../icon/favicon.ico">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <style>
+            .cadastro {
+                font-size: 2em;
+            }
+            .grid_cadastro {
+                width: 600px;
+            }
+            .container {
+                align-items: center;
+                justify-content: center;
+            }
+            #btnCadastro, #btnVoltar {
+                padding: 12px;
+                display: inline-block;
+                margin: auto;
+                margin-top: 40px;
+                font-size: 1em;
+                background-color: transparent;
+                font-weight: 700;
+
+                text-align: center;
+                border: 1px solid black;
+                width: 150px;
+            }
+            #btnVoltar {
+                float: right;
+            }
+            #btnCadastro:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <section id="presentation">
+            <div class="presentation container">
+                <div class="cadastro">
+                    <form>
+                        <table class="grid_cadastro">
+                            <tr>
+                                <td><label for="email_cadastro">Email: </label></td>
+                                <td><input type="email" id="email_cadastro" name="email_cadastro" size="30" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nome_cadastro">Nome: </label></td>
+                                <td><input type="text" id="usuario_cadastro" name="usuario_cadastro" placeholder="Digite seu nome completo" size="30" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="data_cadastro">Data de nascimento: </label></td>
+                                <td><input type="date" id="data_cadastro" name="data_cadastro" value="2012-06-02" min="1920-01-01" max="2012-06-02"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="usuario_cadastro">Nome de usuário: </label></td>
+                                <td><input type="text" id="usuario_cadastro" name="usuario_cadastro" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="senha_cadastro">Senha: </label></td>
+                                <td><input type="password" id="senha_cadastro" name="senha_cadastro" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="conf_senha">Confirme sua senha: </label></td>
+                                <td><input type="password" id="conf_senha" name="conf_senha" required></td>
+                            </tr>
+                        </table>
+                        <a id="btnCadastro" href="posCadastro.html">Cadastrar</a>
+                        <!-- <input type="submit" id="btnCadastro" value="Cadastrar"> !-->
+                        <a id="btnVoltar" href="../index.html">Voltar</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

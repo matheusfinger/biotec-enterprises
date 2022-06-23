@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Biotec Enterprises</title>
+        <link rel="shortcut icon" type="imagem/x-icon" href="../icon/favicon.ico">
+        <link rel="stylesheet" href="../css/style.css">
+
+        <style>
+            div.char {
+                text-align: center;
+            }
+            td.label {
+                text-align:center;
+            }
+            .start {
+                font-size: 2em;
+            }
+            .grid_start {
+                width: 100%;
+            }
+            .text {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .container {
+                align-items: center;
+                justify-content: center;
+            }
+            .btnOpcao{
+                padding: 12px;
+                display: block;
+                margin: auto;
+                margin-top: 40px;
+                font-size: 1em;
+                background-color: transparent;
+                font-weight: 700;
+
+                text-align: center;
+                border: 1px solid black;
+                width: 300px;
+            }
+            .btnOpcao:hover{
+                cursor: pointer;
+                background-color:rgb(48,143,172);
+            }
+            td {
+                padding-top:15px;
+            }
+            .btnOpcao.notReady:hover {
+                cursor: not-allowed;
+            }
+        </style>
+        <script src="../js/postRegister.js"></script>
+    </head>
+    
+    <body>
+        <section id="presentation">
+            <div class="presentation container">
+                <div class="start">
+                    <div class="text">
+                        <h3>Bem-vindo/a/e ao jogo Biotec Enterprises!</h3>
+                        <p>Aqui inicia sua história. Comece com sua empresa do zero e veja ela se tornar uma potência mundial. </p>
+                    </div>
+                    <div>
+                        <form action="../paginas/dashboard.html">
+                            <table class="grid_start">
+                                <tr>
+                                    <td class="label" colspan="3"><h2>Escolha sua empresa:</h2></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="submit" class="btnOpcao" >Reaproveitamento de Resíduos de Cacau</button></td>
+                                    <td><button type="submit" class="btnOpcao notReady" >Produção de vacinas a partir de biofábricas vetais</button></td>
+                                    <td><button type="submit" class="btnOpcao notReady" >Tratamento de esgotos</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="submit" class="btnOpcao notReady" >Fabricação de clones de plantas</button></td>
+                                    <td><button type="submit" class="btnOpcao notReady" >Empresa de Diagnósticos</button></td>
+                                    <td><button type="submit" class="btnOpcao notReady" >Lorem Ipsum</button></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

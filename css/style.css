@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Blaka&family=Poppins:ital,wght@0,100;0,400;0,900;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 /* Características gerais */
@@ -41,18 +42,17 @@ a {
     list-style-type: none;
     text-align: left;
     width: 100%;
-    background:#633838;
+    background:rgb(48,143,172);
     z-index: 1;
 }
 
 a.btm_button {
     padding: 18px 40px;
-    font-family: 'Creepster', 'Times New Roman', Times, serif;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
     font-weight: bold;
-    background:#633838;
+    background:rgb(48,143,172);
     font-size: 2rem;
     display: block;
-    text-shadow: 2px 2px rgb(131, 21, 21);
 }
 
 .btm_option {
@@ -61,8 +61,7 @@ a.btm_button {
 
 a.btm_button:hover, a.btm_dropupitem:hover{
     cursor: pointer;
-    background-color: #0e0707;
-    color: #7e6a6a;
+    background-color:	rgb(55,189,121);
 }
 
 
@@ -70,7 +69,7 @@ a.btm_button:hover, a.btm_dropupitem:hover{
     display: none;
     position: absolute;
     bottom: 60px;
-    background-color: #633838;
+    background-color: rgb(244,230,4);
     z-index: 1;
 }
 
@@ -85,12 +84,11 @@ a.btm_button:hover, a.btm_dropupitem:hover{
 
 .btm_dropupitem {
     padding: 18px 18px;
-    font-family: 'Creepster', 'Times New Roman', Times, serif;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
     font-weight: bold;
-    background:#633838;
+    background:rgb(48,143,172);
     font-size: 2rem;
     display: block;
-    text-shadow: 2px 2px rgb(131, 21, 21);
 }
 
 .dropup:hover .dropup_content {
@@ -255,11 +253,11 @@ footer img {
 
 .container > div{
     padding: 50px;
-    background-color: rgb(253, 252, 252, 0.5);
+    background-color: rgb(253, 252, 252, 0.7);
 }
 
 #presentation{
-    background-image: url(../imagens/sala0.jpg);
+    background-image: url(../imagens/lobby.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -377,3 +375,13 @@ Links que contém 'example' no atributo href
 a[href*="example"] {
     color: red;
 }  */
+
+/* color palette
+
+rgb(4,87,172) -> dark blue
+rgb(48,143,172) -> light blue
+rgb(55,189,121) -> green
+rgb(167,226,55) -> light green
+rgb(244,230,4) -> yellow
+
+*/
