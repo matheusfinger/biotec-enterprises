@@ -10,11 +10,21 @@
         <link rel="stylesheet" href="../css/style.css">
 
         <style>
+            div.char {
+                text-align: center;
+            }
+            td.label {
+                text-align: right;
+                vertical-align:top;
+            }
+            td.label label {
+                margin-right: 10px;
+            }
             .posCadastro {
                 font-size: 2em;
             }
             .grid_posCadastro {
-                width: 500px;
+                width: 100%;
             }
             .texto {
                 text-align: center;
@@ -47,7 +57,14 @@
             td {
                 padding-top:15px;
             }
+            #character {
+                background-color: gray;
+                width: 200px;
+                height: 250px;
+                display: inline-block;
+            }
         </style>
+        <script src="../js/postRegister.js"></script>
     </head>
     
     <body>
@@ -62,31 +79,31 @@
                         <form>
                             <table class="grid_posCadastro">
                                 <tr>
-                                    <td><label for="nome_cadastro">Escolha seu personagem: </label></td>
-                                    <td><select name="pets" id="pets" multiple size="8">
+                                    <td class="label"><label for="nome_cadastro">Escolha seu personagem: </label></td>
+                                    <td><select name="gameClass" id="gameClass" onchange="changeClass();" multiple size="8">
                                         <optgroup label="Homem">
-                                            <option value="dog">Lutador</option>
-                                            <option value="cat">Bruxo</option>
-                                            <option value="hamster" disabled>Suporte/Buff</option>
+                                            <option value="male_fighter">Lutador</option>
+                                            <option value="male_wizard">Bruxo</option>
+                                            <option value="male_support" disabled>Suporte/Buff</option>
                                         </optgroup>
                                         <optgroup label="Mulher">
-                                            <option value="dog">Lutadora</option>
-                                            <option value="cat">Bruxa</option>
-                                            <option value="hamster" disabled>Suporte/Buff</option>
+                                            <option value="female_fighter">Lutadora</option>
+                                            <option value="female_wizard">Bruxa</option>
+                                            <option value="female_support" disabled>Suporte/Buff</option>
                                         </optgroup>
                                         <optgroup label="Não-binário">
-                                            <option value="dog">Lutadore</option>
-                                            <option value="cat">Bruxe</option>
-                                            <option value="hamster" disabled>Suporte/Buff</option>
+                                            <option value="nb_fighter">Lutadore</option>
+                                            <option value="nb_wizard">Bruxe</option>
+                                            <option value="nb_support" disabled>Suporte/Buff</option>
                                         </optgroup>
                                     </select></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="cor_band">Cor da sua bandeira: </label></td>
+                                    <td class="label"><label for="cor_band">Cor da sua bandeira: </label></td>
                                     <td><input type="color" id="cor_band" name="cor_band" value="#e66465"></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="dificuldade">Dificuldade: </label></td>
+                                    <td class="label"><label for="dificuldade">Dificuldade: </label></td>
                                     <td><select name="dificuldade" id="dificuldade">
                                         <option value="1" selected>Fácil</option>
                                         <option value="2">Médio</option>
@@ -96,8 +113,10 @@
                             </table>
                             <!-- <input type="submit" id="btnCadastro" value="Cadastrar"> !-->
                         </form>
-                        <div class="Personagem">
-                            <h2>Card com o personagem</h2>
+                        <div class="char">
+                            <div id="character">
+                                <h2>Card com o personagem</h2>
+                            </div>
                         </div>
                     </div>
                     <a id="btnPosCadastro" href="dashboard.html">Continuar</a>
