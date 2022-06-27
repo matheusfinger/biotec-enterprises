@@ -32,7 +32,19 @@ html {
 }
 
 #corFundo {
-    background-color: lightgray;
+    background-color: antiquewhite;
+}
+
+#imagemFundo {
+    padding: 0;
+    margin: 0;
+    background-image: url(../imagens/dna_gif.gif);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 a {
@@ -136,10 +148,6 @@ li.listaPost {
     margin-left: 50px;
 }
 
-#sideDash div {
-    border-bottom: 4px double #050504;
-}
-
 p.corpoPost, li.listaPost {
     font-size: 1.5rem;
     text-align: justify;
@@ -160,26 +168,8 @@ p.corpoPost {
     margin-top: 40px;
 }
 
-#sideDash > div:first-child {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding-top: 15px;
-}
-
-#sideDash > div:last-child {
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding-bottom: 15px;
-}
-
 #sideDash [class*="Title"]{
-    text-align: center;
     font-size: 2em;
-}
-
-.bodyDash p, li.listaPost {
-    font-size: 1.6em;
-    font-family: 'Mukta', 'Times New Roman', Times, serif;
 }
 
 #sideDash div {
@@ -189,26 +179,32 @@ p.corpoPost {
     margin-right: 10px;
 }
 
-#sideDash div:hover {
-    background-color: lightcoral;
+.gridPontuacao {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.4em;
 }
 
-.adv, #daily {
+.gridPontuacao img {
+    width: 37px;
+}
+
+.gridPontuacao span {
+    margin-left: 10px;
+    font-size: 1.8em;
+}
+
+.ilust, #pont {
     text-align: center;
-    background-color: #4d1313;
-    opacity: 0.5;
+    background-color: rgb(55,189,121);
 }
 
-.adv:hover, #daily:hover {
-    opacity: 1;
-}
-
-.dailyImg, .advImg {
+.pontImg, .ilustImg {
     width: 80%;
 }
 
-.dailyTitle {
-    text-decoration: #4d1313;
+.pontTitle {
+    text-decoration: rgb(244,230,4);
     text-decoration-style: dashed;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
