@@ -38,7 +38,7 @@ html {
 #imagemFundo {
     padding: 0;
     margin: 0;
-    background-image: url(../imagens/dna_gif.gif);
+    background-image: url(../imagens/business.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -56,10 +56,12 @@ a {
     position: fixed;
     bottom: 0;
     list-style-type: none;
-    text-align: left;
+    text-align: center;
     width: 100%;
     background:rgb(48,143,172);
     z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 a.btm_button {
@@ -71,44 +73,9 @@ a.btm_button {
     display: block;
 }
 
-.btm_option {
-    display: inline-block;
-}
-
-a.btm_button:hover, a.btm_dropupitem:hover{
+a.btm_button:hover{
     cursor: pointer;
     background-color:	rgb(55,189,121);
-}
-
-
-.dropup_content {
-    display: none;
-    position: absolute;
-    bottom: 60px;
-    background-color: rgb(244,230,4);
-    z-index: 1;
-}
-
-.dropup_content a {
-    text-align: left;
-}
-
-.dropup {
-    display: inline-block;
-    position: relative;
-}
-
-.btm_dropupitem {
-    padding: 18px 18px;
-    font-family: 'Roboto', 'Times New Roman', Times, serif;
-    font-weight: bold;
-    background:rgb(48,143,172);
-    font-size: 2rem;
-    display: block;
-}
-
-.dropup:hover .dropup_content {
-    display: block;
 }
 
 h3.tituloPost {
@@ -131,10 +98,6 @@ h3.tituloPost {
     background-color: rgb(55,189,121);
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
-}
-
-
-#dashboard > div:last-child {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     padding-bottom: 15px;
@@ -199,6 +162,16 @@ p.corpoPost {
     background-color: rgb(55,189,121);
 }
 
+#pont {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.ilust {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 .pontImg, .ilustImg {
     width: 80%;
 }
@@ -213,7 +186,7 @@ p.corpoPost {
 footer {
     margin-top: 50px;
     text-align: center;
-    background-color: gray;
+    background-color: rgb(4,87,172);
 }
 
 footer img {
